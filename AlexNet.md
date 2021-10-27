@@ -47,6 +47,23 @@ GPU2：颜色
 
 ## Conclusion
 •
+深度与宽度可决定网络能力
+Their capacity can be controlled by varying their depth and breadth.
+1 Introduction p2
+•
+更强大 GPU 及更多数据可进一步提高模型性能
+All of our experiments suggest that our results can be improved simply by waiting for faster GPUs and bigger
+datasets to become available. 1 Introduction p5
+•
+图片缩放细节，对短边先缩放
+Given a rectangular image, we first rescaled the image such that the shorter side was of length 256, and then
+cropped out the central 256 × 256 patch from the resulting image.(2 Dataset p3)
+•
+ReLU 不需要对输入进行标准化来防止饱和现象，即说明 sigmoid/tanh 激活函数有必要对输入进行标准化
+ReLUs
+have the desirable property that they do not require input normalization to prevent them from
+saturating(3.3 LRN p1)
+•
 卷积核学习到频率、方向和颜色特征
 The network has learned a variety of frequency
 and orientation selective kernels, as well as various colored
