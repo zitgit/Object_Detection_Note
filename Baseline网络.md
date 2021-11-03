@@ -20,7 +20,7 @@ dropout probability = 0.5
 
 ### Architecture
 五个卷积+三个全连接层
-INPUT：输入224*224*3的RGB图片
+INPUT：输入224×224×3的RGB图片
 OUTPUT：100个类别
 卷积输出特征图公式：Fo=[Fin - k(kernel) + 2p(padding)]/s(stride) + 1
 
@@ -33,8 +33,8 @@ conv5：ReLU + Pool
 https://www.cnblogs.com/alexanderkun/p/6917984.html
 
 ### Data Augmentation
-训练阶段：Resize 256*256 取224*224随机剪裁
-测试阶段：Resize 水平翻转*10
+训练阶段：Resize 256×256 取224×224随机剪裁
+测试阶段：Resize 水平翻转×10
 PCA方法修改通道的像素值，实现色彩扰动，提高了1个acc
 
 ## Results
@@ -83,6 +83,7 @@ It is notable that our network’s performance degrades if a single convolutiona
 Ultimately we would like to use very large and deep convolutional nets on video sequences.(7 Discussion p2)
 
 
+# VGG
 
 
 
